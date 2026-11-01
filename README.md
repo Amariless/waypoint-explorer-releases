@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/icon.png" width="96" alt="Icono de Explorador">
+  <img src="docs/icon.png" width="96" alt="Icono de Waypoint Explorer">
 </p>
 
-<h1 align="center">Explorador</h1>
+<h1 align="center">Waypoint Explorer</h1>
 
 <p align="center">
   Un explorador de archivos para Linux, rápido y pensado para el día a día.
@@ -14,12 +14,12 @@
 </p>
 
 <p align="center">
-  <img src="docs/captura.png" width="860" alt="Explorador mostrando una carpeta de imágenes con miniaturas">
+  <img src="docs/captura.png" width="860" alt="Waypoint Explorer mostrando una carpeta de imágenes con miniaturas">
 </p>
 
 ## Qué es
 
-Explorador es un gestor de archivos hecho con GTK4 y Rust. Está pensado para KDE Plasma, pero funciona en cualquier escritorio con GTK 4.10 o más nuevo. Hace lo que esperas de un explorador, más algunas cosas que normalmente necesitan otra app.
+Waypoint Explorer es un gestor de archivos hecho con GTK4 y Rust. Está pensado para KDE Plasma, pero funciona en cualquier escritorio con GTK 4.10 o más nuevo. Hace lo que esperas de un explorador, más algunas cosas que normalmente necesitan otra app.
 
 ## Lo que puedes hacer
 
@@ -47,21 +47,21 @@ Explorador es un gestor de archivos hecho con GTK4 y Rust. Está pensado para KD
 - Analizador de espacio en disco.
 - Propiedades con permisos, sumas de verificación y datos de cada tipo de archivo.
 
-Si lo eliges como explorador predeterminado, el botón "Mostrar en la carpeta" del navegador, Discord o Steam abre una pestaña en Explorador.
+Si lo eliges como explorador predeterminado, el botón "Mostrar en la carpeta" del navegador, Discord o Steam abre una pestaña en Waypoint Explorer.
 
 ## Instalación
 
-Descarga `explorador-gtk-linux-x86_64.tar.gz` desde [Releases](../../releases/latest), descomprímelo y ejecuta el instalador:
+Descarga el archivo `.tar.gz` para Linux desde [Releases](../../releases/latest), descomprímelo y ejecuta el instalador:
 
 ```bash
-mkdir explorador && tar -xzf explorador-gtk-linux-x86_64.tar.gz -C explorador
-cd explorador
+mkdir waypoint-explorer && tar -xzf *-linux-x86_64.tar.gz -C waypoint-explorer
+cd waypoint-explorer
 ./instalar.sh
 ```
 
-No pide contraseña de administrador: instala el programa en tu carpeta personal y lo añade al menú de aplicaciones. Para usarlo como explorador predeterminado (y abrirlo con Meta+E en KDE Plasma), ve a *Preferencias → Sistema → Explorador predeterminado*.
+No pide contraseña de administrador: instala el programa en tu carpeta personal y lo añade al menú de aplicaciones. Para usarlo como explorador predeterminado (y abrirlo con Meta+E en KDE Plasma), ve a *Preferencias → Sistema → Waypoint Explorer predeterminado y Meta+E*.
 
-Para desinstalarlo, ejecuta `./desinstalar.sh` desde la misma carpeta. Tus notas, marcadores y preferencias quedan en `~/.local/share/explorador` por si vuelves.
+Para desinstalarlo, ejecuta `./desinstalar.sh` desde la misma carpeta. Tus notas, marcadores y preferencias quedan en `~/.local/share/waypoint-explorer` por si vuelves.
 
 ### Requisitos
 
