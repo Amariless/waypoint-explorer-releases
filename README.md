@@ -1,91 +1,139 @@
 <p align="center">
-  <img src="docs/icon.png" width="96" alt="Icono de Waypoint Explorer">
+  <img src="docs/icon.png" width="96" alt="Waypoint Explorer icon">
 </p>
 
 <h1 align="center">Waypoint Explorer</h1>
 
 <p align="center">
-  Un explorador de archivos para Linux, rápido y pensado para el día a día.
+  A file manager for Linux that does the things other file managers leave to you.
 </p>
 
 <p align="center">
-  <a href="../../releases/latest"><b>Descargar la última versión</b></a>
-  &nbsp;·&nbsp; Linux
+  <a href="https://github.com/Amariless/waypoint-explorer-releases/releases/latest/download/waypoint-explorer-linux-x86_64.tar.gz"><img src="https://img.shields.io/badge/Linux-Download_.tar.gz-17161c?style=for-the-badge&labelColor=1f8ad2&logo=linux&logoColor=white" alt="Download for Linux"></a>
 </p>
 
 <p align="center">
-  <img src="docs/captura.png" width="860" alt="Waypoint Explorer mostrando una carpeta de imágenes con miniaturas">
+  <img src="docs/screenshot.png" width="820" alt="Waypoint Explorer showing a 3D project, with each texture and Blender file grouped with its related files">
 </p>
 
-## Qué es
+## What makes it different
 
-Waypoint Explorer es un gestor de archivos hecho con GTK4 y Rust. Está pensado para KDE Plasma, pero funciona en cualquier escritorio con GTK 4.10 o más nuevo. Hace lo que esperas de un explorador, más algunas cosas que normalmente necesitan otra app.
+<table>
+  <tr>
+    <td width="50%">
+      <h3>Rename any app on your system</h3>
+      <p>Some launchers have names that tell you nothing. Right-click any installed app and give it a name you'll recognize, even Waypoint itself, so it can show up simply as "File Explorer".</p>
+      <p>The new name appears everywhere: the app menu, search and "Open with", not just inside Waypoint. The original app isn't touched.</p>
+    </td>
+    <td width="50%">
+      <h3>Files that belong together stay together</h3>
+      <p>A <code>.blend</code> file and its backups, or a texture and its normal, roughness and metallic maps, show up as a single item with a small counter. Open it to see the rest.</p>
+      <p>Moving or deleting the main file can take its companions along. You can write your own rules for any kind of file.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/apps.png" alt="Installed apps and games listed below the Downloads folder"></td>
+    <td width="50%">
+      <h3>Your apps and games, right in Downloads</h3>
+      <p>Below your downloads, Waypoint lists everything you have installed: Steam and Heroic games with their own icons, Flatpaks, AppImages and regular apps.</p>
+      <p>Open them, jump to where they're installed, rename them or uninstall them from the same place.</p>
+    </td>
+  </tr>
+</table>
 
-## Lo que puedes hacer
+**Also unique to Waypoint**
 
-**Moverte rápido**
-- Pestañas que puedes sacar a su propia ventana, y vista dividida con dos paneles.
-- Barra de ruta donde puedes pegar o escribir una dirección.
-- Búsqueda por nombre o por contenido, sin importar mayúsculas ni tildes, con comodines como `*.png`.
-- Vista previa rápida con la barra espaciadora.
+- **Notes on any file or folder**, to remember what something is or what's left to do with it.
+- **Hide files without renaming them.** No need to add a dot to the name.
+- **Your own icon for any folder**, and full custom icon themes.
 
-**Trabajar con archivos**
-- Copiar, mover y arrastrar con barra de progreso y botón para cancelar.
-- Papelera real con restaurar, renombrado en lote y deshacer.
-- Abrir comprimidos (zip, 7z, tar y otros) como si fueran carpetas.
-- Miniaturas de fotos, videos, portadas de música y archivos de Blender, incluidos formatos como AVIF, HEIC o RAW de cámara.
+## Everything else you'd expect
 
-**Mantener todo ordenado**
-- Dejar notas en cualquier archivo o carpeta.
-- Agrupar archivos relacionados bajo uno principal, por ejemplo un `.blend` con sus copias de seguridad.
-- Ocultar archivos sin cambiarles el nombre.
-- Una vista simple que limpia Descargas y muestra tus juegos y aplicaciones instaladas (Steam, Heroic, Flatpak, AppImage).
-- Iconos propios por carpeta.
+<details>
+<summary><b>Getting around</b></summary>
+<br>
 
-**Herramientas incluidas**
-- Buscador de archivos duplicados.
-- Analizador de espacio en disco.
-- Propiedades con permisos, sumas de verificación y datos de cada tipo de archivo.
+- Tabs you can drag out into their own window, and a split view with two panes.
+- A path bar where you can type or paste any address.
+- Search by name or by content, ignoring case and accents, with wildcards like `*.png`.
+- Quick preview with the space bar.
+- Set it as your default file manager. In KDE Plasma it also takes over <kbd>Meta</kbd>+<kbd>E</kbd>, and "Show in folder" from your browser, Discord or Steam opens a tab in Waypoint.
 
-Si lo eliges como explorador predeterminado, el botón "Mostrar en la carpeta" del navegador, Discord o Steam abre una pestaña en Waypoint Explorer.
+</details>
 
-## Instalación
+<details>
+<summary><b>Working with files</b></summary>
+<br>
 
-Descarga el archivo `.tar.gz` para Linux desde [Releases](../../releases/latest), descomprímelo y ejecuta el instalador:
+- Copy, move and drag with a progress bar and a cancel button.
+- A real trash bin with restore, batch renaming and undo.
+- Open archives (zip, 7z, tar and more) as if they were folders.
+- Thumbnails for photos, videos, album covers and Blender files, including AVIF, HEIC and camera RAW.
+
+</details>
+
+<details>
+<summary><b>Built-in tools</b></summary>
+<br>
+
+- A duplicate file finder.
+- A disk usage analyzer to see what's taking up space.
+- Properties with permissions, checksums and details for each type of file.
+
+</details>
+
+## Download
+
+Waypoint Explorer runs on 64-bit Linux with GTK 4.10 or newer. It's made for KDE Plasma but works on any desktop. The interface is in Spanish for now.
+
+1. [Download the .tar.gz](https://github.com/Amariless/waypoint-explorer-releases/releases/latest/download/waypoint-explorer-linux-x86_64.tar.gz).
+2. Extract it and run the installer:
 
 ```bash
-mkdir waypoint-explorer && tar -xzf *-linux-x86_64.tar.gz -C waypoint-explorer
+mkdir waypoint-explorer && tar -xzf waypoint-explorer-linux-x86_64.tar.gz -C waypoint-explorer
 cd waypoint-explorer
 ./instalar.sh
 ```
 
-No pide contraseña de administrador: instala el programa en tu carpeta personal y lo añade al menú de aplicaciones. Para usarlo como explorador predeterminado (y abrirlo con Meta+E en KDE Plasma), ve a *Preferencias → Sistema → Waypoint Explorer predeterminado y Meta+E*.
+It doesn't ask for an administrator password: it installs into your home folder and adds itself to the app menu. To make it your default file manager, go to *Preferences → System*.
 
-Para desinstalarlo, ejecuta `./desinstalar.sh` desde la misma carpeta. Tus notas, marcadores y preferencias quedan en `~/.local/share/waypoint-explorer` por si vuelves.
+To uninstall it, run `./desinstalar.sh` from the same folder. Your notes, bookmarks and preferences stay in `~/.local/share/waypoint-explorer` in case you come back.
 
-### Requisitos
+To update, use *Preferences → System → Check for updates*. It downloads the new version and restarts by itself.
 
-Linux de 64 bits con GTK 4.10 o más nuevo. Se compila en CachyOS (Arch), así que en distribuciones muy antiguas puede no arrancar.
+<details>
+<summary><b>Optional programs for extra features</b></summary>
+<br>
 
-Algunas funciones usan programas externos. Si no están instalados, esa función simplemente no aparece:
+Some features use other programs. If one isn't installed, that feature just doesn't show up.
 
-| Programa | Para qué |
+| Program | Used for |
 |---|---|
-| `p7zip` | Abrir y modificar comprimidos |
-| `ffmpeg`, `ffmpegthumbnailer` | Miniaturas de video y formatos poco comunes |
-| `imagemagick`, `librsvg`, `libavif` | Miniaturas de PSD, RAW, SVG y AVIF |
-| `exiv2`, `poppler` | Datos de fotos y de PDF |
+| `p7zip` | Opening and editing archives |
+| `ffmpeg`, `ffmpegthumbnailer` | Video thumbnails and unusual formats |
+| `imagemagick`, `librsvg`, `libavif` | Thumbnails for PSD, RAW, SVG and AVIF |
+| `exiv2`, `poppler` | Photo and PDF details |
 
-En Arch y derivadas se instalan todos con:
+On Arch and its derivatives you can install all of them with:
 
 ```bash
 sudo pacman -S p7zip ffmpeg ffmpegthumbnailer imagemagick librsvg libavif exiv2 poppler
 ```
 
-## Actualizaciones
+It's built on CachyOS (Arch), so it may not start on very old distributions.
 
-Desde la app: *Preferencias → Sistema → Buscar actualizaciones*. Descarga la versión nueva y se reinicia sola.
+</details>
+
+## Feedback
+
+Found a bug, have an idea or just want to say something? Each button opens a short form.
+
+<p>
+  <a href="https://github.com/Amariless/waypoint-explorer-releases/issues/new?template=bug.yml"><img src="https://img.shields.io/badge/Report_a_bug-1f8ad2?style=for-the-badge" alt="Report a bug"></a>
+  <a href="https://github.com/Amariless/waypoint-explorer-releases/issues/new?template=idea.yml"><img src="https://img.shields.io/badge/Suggest_an_idea-1f8ad2?style=for-the-badge" alt="Suggest an idea"></a>
+  <a href="https://github.com/Amariless/waypoint-explorer-releases/issues/new?template=comment.yml"><img src="https://img.shields.io/badge/Leave_a_comment-1f8ad2?style=for-the-badge" alt="Leave a comment"></a>
+</p>
 
 ---
 
-Este repositorio solo publica los ejecutables; el código fuente es privado. Si algo falla o tienes una idea, abre un [issue](../../issues).
+<sub>This repository only hosts the program; the source code is private.</sub>
